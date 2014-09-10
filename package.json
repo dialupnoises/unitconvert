@@ -1,0 +1,24 @@
+{
+  "name": "unitconvert",
+  "description": "Simple but powerful Node.js unit conversion library",
+  "version": "0.1.0",
+  "author": "Andrew Rogers <anrogers529@gmail.com>",
+  "keywords": [
+    "unit",
+    "units",
+    "conversion"
+  ],
+  "repository": "cpancake/unitconvert",
+  "license": "MIT",
+  "homepage": "http://github.com/cpancake/unitconvert",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "request": "^2.42.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
+  }
+}
