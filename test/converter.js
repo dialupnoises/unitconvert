@@ -112,5 +112,12 @@ describe('Converter', function() {
 				done();
 			});
 		});
+		it('should convert BTC correctly', function(done) {
+			converter.convert('1 BTC to USD', function(err, value, str) {
+				(err == null).should.equal(true);
+				value.should.be.above(0);
+				done();
+			});
+		});
 	});
 });

@@ -506,10 +506,10 @@
 			{"code": "NMC", "name": "Namecoin", "market": 29}
 		],
 		"other": [
-			{"code": "XAU", "name": "Gold"},
-			{"code": "XAG", "name": "Silver"},
-			{"code": "XPD", "name": "Palladium"},
-			{"code": "XPT", "name": "Platinum"}
+			{"code": "XAU", "name": "Gold", "formatted": ["troy ounce of gold", "troy ounces of gold"]},
+			{"code": "XAG", "name": "Silver", "formatted": ["troy ounce of silver", "troy ounces of silver"]},
+			{"code": "XPD", "name": "Palladium", "formatted": ["troy ounce of palladium", "troy ounces of palladium"]},
+			{"code": "XPT", "name": "Platinum", "formatted": ["troy ounce of platinum", "troy ounces of platinum"]}
 		]
 	}
 }
