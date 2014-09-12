@@ -1,6 +1,7 @@
-var fs = require('fs');
+var fs = require('fs'),
+    path = require('path');
 
-var defaultUnits = JSON.parse(fs.readFileSync('default.json'));
+var defaultUnits = JSON.parse(fs.readFileSync(path.join(__dirname, 'default.json')));
 
 module.exports = function(units)
 {
