@@ -1,7 +1,7 @@
 {
   "name": "unitconvert",
   "description": "Simple but powerful Node.js unit conversion library",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": "Andrew Rogers <anrogers529@gmail.com>",
   "keywords": [
     "unit",
