@@ -423,7 +423,7 @@
 		    {"code": "CAD", "name": "Canadian Dollar"},
 		    {"code": "XAF", "name": "Central African Franc"},
 		    {"code": "CLP", "name": "Chilean Peso"},
-		    {"code": "CNY", "name": "Chinese Yuan"},
+		    {"code": "CNY", "name": "Chinese Yuan", "short": "yuan"},
 		    {"code": "COP", "name": "Colombian Peso"},
 		    {"code": "HRK", "name": "Croatian Kuna"},
 		    {"code": "CZK", "name": "Czech Koruna"},
@@ -442,7 +442,7 @@
 		    {"code": "IDR", "name": "Indonesian Rupiah"},
 		    {"code": "ILS", "name": "Israeli Sheqel"},
 		    {"code": "JMD", "name": "Jamaican Dollar"},
-		    {"code": "JPY", "name": "Japanese Yen", "formatted": ["Japanese Yen", "Japanese Yen"]},
+		    {"code": "JPY", "name": "Japanese Yen", "formatted": ["Japanese Yen", "Japanese Yen"], "short": "yen"},
 		    {"code": "JOD", "name": "Jordanian Dinar"},
 		    {"code": "KES", "name": "Kenyan Shilling"},
 		    {"code": "KWD", "name": "Kuwaiti Dinar"},
@@ -455,7 +455,7 @@
 		    {"code": "MYR", "name": "Malaysian Ringgit"},
 		    {"code": "MVR", "name": "Maldivian Rufiyaa"},
 		    {"code": "MUR", "name": "Mauritian Rupee"},
-		    {"code": "MXN", "name": "Mexican Peso"},
+		    {"code": "MXN", "name": "Mexican Peso", "short": "peso"},
 		    {"code": "MDL", "name": "Moldovan Leu"},
 		    {"code": "MAD", "name": "Moroccan Dirham"},
 		    {"code": "NAD", "name": "Namibian Dollar"},
@@ -490,10 +490,10 @@
 		    {"code": "UGX", "name": "Ugandan Shilling"},
 		    {"code": "UAH", "name": "Ukraine Hryvnia"},
 		    {"code": "AED", "name": "United Arab Emirates Dirham"},
-		    {"code": "USD", "name": "United States Dollar"},
+		    {"code": "USD", "name": "United States Dollar", "short": "dollar"},
 		    {"code": "UYU", "name": "Uruguayan Peso"},
 		    {"code": "VEF", "name": "Venezuelan BolÃ­var"},
-		    {"code": "VND", "name": "Vietnamese Dong"},
+		    {"code": "VND", "name": "Vietnamese Dong", "short": "dong"},
 		   	{"code": "XOF", "name": "West African Franc"}
 		],
 		"crypto": [
@@ -511,5 +511,1027 @@
 			{"code": "XPD", "name": "Palladium", "formatted": ["troy ounce of palladium", "troy ounces of palladium"]},
 			{"code": "XPT", "name": "Platinum", "formatted": ["troy ounce of platinum", "troy ounces of platinum"]}
 		]
-	}
+	},
+	"timezones": [
+		{
+			"code": "ACDT",
+			"name": "Australian Central Daylight Savings Time",
+			"offset": "+10:30"
+		},
+		{
+			"code": "ACST",
+			"name": "Australian Central Standard Time",
+			"offset": "+09:30"
+		},
+		{
+			"code": "ACT",
+			"name": "Acre Time",
+			"offset": "-05:00"
+		},
+		{
+			"code": "ACT",
+			"name": "ASEAN Common Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "ADT",
+			"name": "Atlantic Daylight Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "AEDT",
+			"name": "Australian Eastern Daylight Savings Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "AEST",
+			"name": "Australian Eastern Standard Time",
+			"offset": "+10:00"
+		},
+		{
+			"code": "AFT",
+			"name": "Afghanistan Time",
+			"offset": "+04:30"
+		},
+		{
+			"code": "AKDT",
+			"name": "Alaska Daylight Time",
+			"offset": "-08:00"
+		},
+		{
+			"code": "AKST",
+			"name": "Alaska Standard Time",
+			"offset": "-09:00"
+		},
+		{
+			"code": "AMST",
+			"name": "Amazon Summer Time (Brazil)[1]",
+			"offset": "-03:00"
+		},
+		{
+			"code": "AMST",
+			"name": "Armenia Summer Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "AMT",
+			"name": "Amazon Time (Brazil)[2]",
+			"offset": "-04:00"
+		},
+		{
+			"code": "AMT",
+			"name": "Armenia Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "ART",
+			"name": "Argentina Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "AST",
+			"name": "Arabia Standard Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "AST",
+			"name": "Atlantic Standard Time",
+			"offset": "-04:00"
+		},
+		{
+			"code": "AWDT",
+			"name": "Australian Western Daylight Time",
+			"offset": "+09:00"
+		},
+		{
+			"code": "AWST",
+			"name": "Australian Western Standard Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "AZOST",
+			"name": "Azores Standard Time",
+			"offset": "-01:00"
+		},
+		{
+			"code": "AZT",
+			"name": "Azerbaijan Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "BDT",
+			"name": "Brunei Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "BDT",
+			"name": "Bangladesh Daylight Time (Bangladesh Daylight saving time keeps UTC+06 offset) [3]",
+			"offset": "+06:00"
+		},
+		{
+			"code": "BIOT",
+			"name": "British Indian Ocean Time",
+			"offset": "+06:00"
+		},
+		{
+			"code": "BIT",
+			"name": "Baker Island Time",
+			"offset": "-12:00"
+		},
+		{
+			"code": "BOT",
+			"name": "Bolivia Time",
+			"offset": "-04:00"
+		},
+		{
+			"code": "BRST",
+			"name": "Brasilia Summer Time",
+			"offset": "-02:00"
+		},
+		{
+			"code": "BRT",
+			"name": "Brasilia Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "BST",
+			"name": "Bangladesh Standard Time",
+			"offset": "+06:00"
+		},
+		{
+			"code": "BST",
+			"name": "Bougainville Standard Time[4]",
+			"offset": "+11:00"
+		},
+		{
+			"code": "BST",
+			"name": "British Summer Time (British Standard Time from Feb 1968 to Oct 1971)",
+			"offset": "+01:00"
+		},
+		{
+			"code": "BTT",
+			"name": "Bhutan Time",
+			"offset": "+06:00"
+		},
+		{
+			"code": "CAT",
+			"name": "Central Africa Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "CCT",
+			"name": "Cocos Islands Time",
+			"offset": "+06:30"
+		},
+		{
+			"code": "CDT",
+			"name": "Central Daylight Time (North America)",
+			"offset": "-05:00"
+		},
+		{
+			"code": "CDT",
+			"name": "Cuba Daylight Time[5]",
+			"offset": "-04:00"
+		},
+		{
+			"code": "CEDT",
+			"name": "Central European Daylight Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "CEST",
+			"name": "Central European Summer Time (Cf. HAEC)",
+			"offset": "+02:00"
+		},
+		{
+			"code": "CET",
+			"name": "Central European Time",
+			"offset": "+01:00"
+		},
+		{
+			"code": "CHADT",
+			"name": "Chatham Daylight Time",
+			"offset": "+13:45"
+		},
+		{
+			"code": "CHAST",
+			"name": "Chatham Standard Time",
+			"offset": "+12:45"
+		},
+		{
+			"code": "CHOT",
+			"name": "Choibalsan",
+			"offset": "+08:00"
+		},
+		{
+			"code": "ChST",
+			"name": "Chamorro Standard Time",
+			"offset": "+10:00"
+		},
+		{
+			"code": "CHUT",
+			"name": "Chuuk Time",
+			"offset": "+10:00"
+		},
+		{
+			"code": "CIST",
+			"name": "Clipperton Island Standard Time",
+			"offset": "-08:00"
+		},
+		{
+			"code": "CIT",
+			"name": "Central Indonesia Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "CKT",
+			"name": "Cook Island Time",
+			"offset": "-10:00"
+		},
+		{
+			"code": "CLST",
+			"name": "Chile Summer Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "CLT",
+			"name": "Chile Standard Time",
+			"offset": "-04:00"
+		},
+		{
+			"code": "COST",
+			"name": "Colombia Summer Time",
+			"offset": "-04:00"
+		},
+		{
+			"code": "COT",
+			"name": "Colombia Time",
+			"offset": "-05:00"
+		},
+		{
+			"code": "CST",
+			"name": "Central Standard Time (North America)",
+			"offset": "-06:00"
+		},
+		{
+			"code": "CST",
+			"name": "China Standard Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "CST",
+			"name": "Central Standard Time (Australia)",
+			"offset": "+09:30"
+		},
+		{
+			"code": "CST",
+			"name": "Central Summer Time (Australia)",
+			"offset": "+10:30"
+		},
+		{
+			"code": "CST",
+			"name": "Cuba Standard Time",
+			"offset": "-05:00"
+		},
+		{
+			"code": "CT",
+			"name": "China time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "CVT",
+			"name": "Cape Verde Time",
+			"offset": "-01:00"
+		},
+		{
+			"code": "CWST",
+			"name": "Central Western Standard Time (Australia) unofficial",
+			"offset": "+08:45"
+		},
+		{
+			"code": "CXT",
+			"name": "Christmas Island Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "DAVT",
+			"name": "Davis Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "DDUT",
+			"name": "Dumont d'Urville Time",
+			"offset": "+10:00"
+		},
+		{
+			"code": "DFT",
+			"name": "AIX specific equivalent of Central European Time[6]",
+			"offset": "+01:00"
+		},
+		{
+			"code": "EASST",
+			"name": "Easter Island Standard Summer Time",
+			"offset": "-05:00"
+		},
+		{
+			"code": "EAST",
+			"name": "Easter Island Standard Time",
+			"offset": "-06:00"
+		},
+		{
+			"code": "EAT",
+			"name": "East Africa Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "ECT",
+			"name": "Eastern Caribbean Time (does not recognise DST)",
+			"offset": "-04:00"
+		},
+		{
+			"code": "ECT",
+			"name": "Ecuador Time",
+			"offset": "-05:00"
+		},
+		{
+			"code": "EDT",
+			"name": "Eastern Daylight Time (North America)",
+			"offset": "-04:00"
+		},
+		{
+			"code": "EEDT",
+			"name": "Eastern European Daylight Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "EEST",
+			"name": "Eastern European Summer Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "EET",
+			"name": "Eastern European Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "EGST",
+			"name": "Eastern Greenland Summer Time",
+			"offset": "+00:00"
+		},
+		{
+			"code": "EGT",
+			"name": "Eastern Greenland Time",
+			"offset": "-01:00"
+		},
+		{
+			"code": "EIT",
+			"name": "Eastern Indonesian Time",
+			"offset": "+09:00"
+		},
+		{
+			"code": "EST",
+			"name": "Eastern Standard Time (North America)",
+			"offset": "-05:00"
+		},
+		{
+			"code": "FET",
+			"name": "Further-eastern European Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "FJT",
+			"name": "Fiji Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "FKST",
+			"name": "Falkland Islands Standard Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "FKST",
+			"name": "Falkland Islands Summer Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "FKT",
+			"name": "Falkland Islands Time",
+			"offset": "-04:00"
+		},
+		{
+			"code": "FNT",
+			"name": "Fernando de Noronha Time",
+			"offset": "-02:00"
+		},
+		{
+			"code": "GALT",
+			"name": "Galapagos Time",
+			"offset": "-06:00"
+		},
+		{
+			"code": "GAMT",
+			"name": "Gambier Islands",
+			"offset": "-09:00"
+		},
+		{
+			"code": "GET",
+			"name": "Georgia Standard Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "GFT",
+			"name": "French Guiana Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "GILT",
+			"name": "Gilbert Island Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "GIT",
+			"name": "Gambier Island Time",
+			"offset": "-09:00"
+		},
+		{
+			"code": "GMT",
+			"name": "Greenwich Mean Time",
+			"offset": "+00:00"
+		},
+		{
+			"code": "GST",
+			"name": "South Georgia and the South Sandwich Islands",
+			"offset": "-02:00"
+		},
+		{
+			"code": "GST",
+			"name": "Gulf Standard Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "GYT",
+			"name": "Guyana Time",
+			"offset": "-04:00"
+		},
+		{
+			"code": "HADT",
+			"name": "Hawaii-Aleutian Daylight Time",
+			"offset": "-09:00"
+		},
+		{
+			"code": "HAEC",
+			"name": "Heure Avancée d'Europe Centrale francised name for CEST",
+			"offset": "+02:00"
+		},
+		{
+			"code": "HAST",
+			"name": "Hawaii-Aleutian Standard Time",
+			"offset": "-10:00"
+		},
+		{
+			"code": "HKT",
+			"name": "Hong Kong Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "HMT",
+			"name": "Heard and McDonald Islands Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "HOVT",
+			"name": "Khovd Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "HST",
+			"name": "Hawaii Standard Time",
+			"offset": "-10:00"
+		},
+		{
+			"code": "IBST",
+			"name": "International Business Standard Time",
+			"offset": "+00:00"
+		},
+		{
+			"code": "ICT",
+			"name": "Indochina Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "IDT",
+			"name": "Israel Daylight Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "IOT",
+			"name": "Indian Ocean Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "IRDT",
+			"name": "Iran Daylight Time",
+			"offset": "+04:30"
+		},
+		{
+			"code": "IRKT",
+			"name": "Irkutsk Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "IRST",
+			"name": "Iran Standard Time",
+			"offset": "+03:30"
+		},
+		{
+			"code": "IST",
+			"name": "Indian Standard Time",
+			"offset": "+05:30"
+		},
+		{
+			"code": "IST",
+			"name": "Irish Standard Time[7]",
+			"offset": "+01:00"
+		},
+		{
+			"code": "IST",
+			"name": "Israel Standard Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "JST",
+			"name": "Japan Standard Time",
+			"offset": "+09:00"
+		},
+		{
+			"code": "KGT",
+			"name": "Kyrgyzstan time",
+			"offset": "+06:00"
+		},
+		{
+			"code": "KOST",
+			"name": "Kosrae Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "KRAT",
+			"name": "Krasnoyarsk Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "KST",
+			"name": "Korea Standard Time",
+			"offset": "+09:00"
+		},
+		{
+			"code": "LHST",
+			"name": "Lord Howe Standard Time",
+			"offset": "+10:30"
+		},
+		{
+			"code": "LHST",
+			"name": "Lord Howe Summer Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "LINT",
+			"name": "Line Islands Time",
+			"offset": "+14:00"
+		},
+		{
+			"code": "MAGT",
+			"name": "Magadan Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "MART",
+			"name": "Marquesas Islands Time",
+			"offset": "−09:30"
+		},
+		{
+			"code": "MAWT",
+			"name": "Mawson Station Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "MDT",
+			"name": "Mountain Daylight Time (North America)",
+			"offset": "-06:00"
+		},
+		{
+			"code": "MET",
+			"name": "Middle European Time Same zone as CET",
+			"offset": "+01:00"
+		},
+		{
+			"code": "MEST",
+			"name": "Middle European Summer Time Same zone as CEST",
+			"offset": "+02:00"
+		},
+		{
+			"code": "MHT",
+			"name": "Marshall Islands",
+			"offset": "+12:00"
+		},
+		{
+			"code": "MIST",
+			"name": "Macquarie Island Station Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "MIT",
+			"name": "Marquesas Islands Time",
+			"offset": "−09:30"
+		},
+		{
+			"code": "MMT",
+			"name": "Myanmar Time",
+			"offset": "+06:30"
+		},
+		{
+			"code": "MSK",
+			"name": "Moscow Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "MST",
+			"name": "Malaysia Standard Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "MST",
+			"name": "Mountain Standard Time (North America)",
+			"offset": "-07:00"
+		},
+		{
+			"code": "MST",
+			"name": "Myanmar Standard Time",
+			"offset": "+06:30"
+		},
+		{
+			"code": "MUT",
+			"name": "Mauritius Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "MVT",
+			"name": "Maldives Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "MYT",
+			"name": "Malaysia Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "NCT",
+			"name": "New Caledonia Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "NDT",
+			"name": "Newfoundland Daylight Time",
+			"offset": "−02:30"
+		},
+		{
+			"code": "NFT",
+			"name": "Norfolk Time",
+			"offset": "+11:30"
+		},
+		{
+			"code": "NPT",
+			"name": "Nepal Time",
+			"offset": "+05:45"
+		},
+		{
+			"code": "NST",
+			"name": "Newfoundland Standard Time",
+			"offset": "−03:30"
+		},
+		{
+			"code": "NT",
+			"name": "Newfoundland Time",
+			"offset": "−03:30"
+		},
+		{
+			"code": "NUT",
+			"name": "Niue Time",
+			"offset": "-11:00"
+		},
+		{
+			"code": "NZDT",
+			"name": "New Zealand Daylight Time",
+			"offset": "+13:00"
+		},
+		{
+			"code": "NZST",
+			"name": "New Zealand Standard Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "OMST",
+			"name": "Omsk Time",
+			"offset": "+06:00"
+		},
+		{
+			"code": "ORAT",
+			"name": "Oral Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "PDT",
+			"name": "Pacific Daylight Time (North America)",
+			"offset": "-07:00"
+		},
+		{
+			"code": "PET",
+			"name": "Peru Time",
+			"offset": "-05:00"
+		},
+		{
+			"code": "PETT",
+			"name": "Kamchatka Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "PGT",
+			"name": "Papua New Guinea Time",
+			"offset": "+10:00"
+		},
+		{
+			"code": "PHOT",
+			"name": "Phoenix Island Time",
+			"offset": "+13:00"
+		},
+		{
+			"code": "PKT",
+			"name": "Pakistan Standard Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "PMDT",
+			"name": "Saint Pierre and Miquelon Daylight time",
+			"offset": "-02:00"
+		},
+		{
+			"code": "PMST",
+			"name": "Saint Pierre and Miquelon Standard Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "PONT",
+			"name": "Pohnpei Standard Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "PST",
+			"name": "Pacific Standard Time (North America)",
+			"offset": "-08:00"
+		},
+		{
+			"code": "PST",
+			"name": "Philippine Standard Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "PYST",
+			"name": "Paraguay Summer Time (South America)[8]",
+			"offset": "-03:00"
+		},
+		{
+			"code": "PYT",
+			"name": "Paraguay Time (South America)[9]",
+			"offset": "-04:00"
+		},
+		{
+			"code": "RET",
+			"name": "Réunion Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "ROTT",
+			"name": "Rothera Research Station Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "SAKT",
+			"name": "Sakhalin Island time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "SAMT",
+			"name": "Samara Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "SAST",
+			"name": "South African Standard Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "SBT",
+			"name": "Solomon Islands Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "SCT",
+			"name": "Seychelles Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "SGT",
+			"name": "Singapore Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "SLST",
+			"name": "Sri Lanka Standard Time",
+			"offset": "+05:30"
+		},
+		{
+			"code": "SRET",
+			"name": "Srednekolymsk Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "SRT",
+			"name": "Suriname Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "SST",
+			"name": "Samoa Standard Time",
+			"offset": "-11:00"
+		},
+		{
+			"code": "SST",
+			"name": "Singapore Standard Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "SYOT",
+			"name": "Showa Station Time",
+			"offset": "+03:00"
+		},
+		{
+			"code": "TAHT",
+			"name": "Tahiti Time",
+			"offset": "-10:00"
+		},
+		{
+			"code": "THA",
+			"name": "Thailand Standard Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "TFT",
+			"name": "Indian/Kerguelen",
+			"offset": "+05:00"
+		},
+		{
+			"code": "TJT",
+			"name": "Tajikistan Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "TKT",
+			"name": "Tokelau Time",
+			"offset": "+13:00"
+		},
+		{
+			"code": "TLT",
+			"name": "Timor Leste Time",
+			"offset": "+09:00"
+		},
+		{
+			"code": "TMT",
+			"name": "Turkmenistan Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "TOT",
+			"name": "Tonga Time",
+			"offset": "+13:00"
+		},
+		{
+			"code": "TVT",
+			"name": "Tuvalu Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "UCT",
+			"name": "Coordinated Universal Time",
+			"offset": "+00:00"
+		},
+		{
+			"code": "ULAT",
+			"name": "Ulaanbaatar Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "USZ1",
+			"name": "Kaliningrad Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "UTC",
+			"name": "Coordinated Universal Time",
+			"offset": "+00:00"
+		},
+		{
+			"code": "UYST",
+			"name": "Uruguay Summer Time",
+			"offset": "-02:00"
+		},
+		{
+			"code": "UYT",
+			"name": "Uruguay Standard Time",
+			"offset": "-03:00"
+		},
+		{
+			"code": "UZT",
+			"name": "Uzbekistan Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "VET",
+			"name": "Venezuelan Standard Time",
+			"offset": "−04:30"
+		},
+		{
+			"code": "VLAT",
+			"name": "Vladivostok Time",
+			"offset": "+10:00"
+		},
+		{
+			"code": "VOLT",
+			"name": "Volgograd Time",
+			"offset": "+04:00"
+		},
+		{
+			"code": "VOST",
+			"name": "Vostok Station Time",
+			"offset": "+06:00"
+		},
+		{
+			"code": "VUT",
+			"name": "Vanuatu Time",
+			"offset": "+11:00"
+		},
+		{
+			"code": "WAKT",
+			"name": "Wake Island Time",
+			"offset": "+12:00"
+		},
+		{
+			"code": "WAST",
+			"name": "West Africa Summer Time",
+			"offset": "+02:00"
+		},
+		{
+			"code": "WAT",
+			"name": "West Africa Time",
+			"offset": "+01:00"
+		},
+		{
+			"code": "WEDT",
+			"name": "Western European Daylight Time",
+			"offset": "+01:00"
+		},
+		{
+			"code": "WEST",
+			"name": "Western European Summer Time",
+			"offset": "+01:00"
+		},
+		{
+			"code": "WET",
+			"name": "Western European Time",
+			"offset": "+00:00"
+		},
+		{
+			"code": "WIT",
+			"name": "Western Indonesian Time",
+			"offset": "+07:00"
+		},
+		{
+			"code": "WST",
+			"name": "Western Standard Time",
+			"offset": "+08:00"
+		},
+		{
+			"code": "YAKT",
+			"name": "Yakutsk Time",
+			"offset": "+09:00"
+		},
+		{
+			"code": "YEKT",
+			"name": "Yekaterinburg Time",
+			"offset": "+05:00"
+		},
+		{
+			"code": "Z",
+			"name": "Zulu Time (Coordinated Universal Time)",
+			"offset": "+00:00"
+		}
+	]
 }

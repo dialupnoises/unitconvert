@@ -119,5 +119,13 @@ describe('Converter', function() {
 				done();
 			});
 		});
+		it('should convert EST to GMT correctly', function(done) {
+			converter.convert('1:00 am EST in GMT', function(err, value, str) {
+				(err == null).should.equal(true);
+				var exp = '6:00:00 am';
+				(value.substr(-exp.length) == exp).should.equal(true);
+				done();
+			});
+		});
 	});
 });

@@ -4,7 +4,7 @@ Node.js library for converting from one unit to another. Pretty simple.
 
 In short, it takes user-provided strings, like `1 barleycorn in yards`, and returns the result. 
 
-In long, it can turn any unit specified in the constructor into any other unit specified in the constructor. It can do currencies too (state and crypto). It ships with probably every unit you'll need, but you can specify more if you want.
+In long, it can turn any unit specified in the constructor into any other unit specified in the constructor. It can do currencies too (state and crypto). It can also convert between timezones. It ships with probably every unit you'll need, but you can specify more if you want.
 
 ## Guide
 
@@ -44,6 +44,8 @@ unitconvert can convert between any state currency (Euro, USD, etc), any of the 
     };
     
 This function accepts two arguments, `code` and `callback`. `code` is the ISO currency code, while `callback` is a function that accepts `err` and `price`. Price should be the purchasing power of gold in that currency; for example, if one troy ounce of gold (1 XAU) buys 1200 USD, you'd return 1200. Results are cached in-memory, so only one lookup is done until you create another `Converter` object.
+
+The `err` result is a standard `Error` object, but with a `fromInput` property if it came from the input. That means for things like "invalid unit" it'll have that property, but for things like a failed HTTP request, it won't. I recommend only displaying the error to the end user if the error has that property.
 
 ### Crypto-Currency
 
