@@ -15,7 +15,6 @@
     "test": "mocha -R spec"
   },
   "dependencies": {
-    "fuse.js": "^1.2.2",
     "moment": "^2.10.6",
     "request": "^2.42.0"
   },

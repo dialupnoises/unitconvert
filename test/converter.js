@@ -28,6 +28,19 @@ describe('Converter', function() {
 				done();
 			});
 		});
+		it('should error on incompatible units', function(done) {
+			converter.convert('1 meter to rankine', function(err, value, str) {
+				err.should.not.equal(null);
+				done();
+			});
+		});
+		it('should handle short metric units', function(done) {
+			converter.convert('1 micrometer to Mm', function(err, value, str) {
+				(err == null).should.equal(true);
+				value.should.equal(1e-12);
+				done();
+			});
+		});
 		it('should convert distance correctly', function(done) {
 			converter.convert('1 meter to feet', function(err, value, str) {
 				parseFloat(value.toString()).toFixed(9).should.equal('3.280839895');
@@ -116,14 +129,6 @@ describe('Converter', function() {
 			converter.convert('1 BTC to USD', function(err, value, str) {
 				(err == null).should.equal(true);
 				value.should.be.above(0);
-				done();
-			});
-		});
-		it('should convert EST to GMT correctly', function(done) {
-			converter.convert('1:00 am EST in GMT', function(err, value, str) {
-				(err == null).should.equal(true);
-				var exp = '6:00:00 am';
-				(value.substr(-exp.length) == exp).should.equal(true);
 				done();
 			});
 		});

@@ -120,7 +120,7 @@
 				{"name":"Fahrenheit","aliases":["fahrenheit","F"],"value":"-17.22222222222222","formatted":["degree fahrenheit","degrees fahrenheit"]},
 				{"name":"Kelvin","aliases":["kelvin","K"],"value":"-272.15000000000003","formatted":["degree kelvin","degrees kelvin"]},
 				{"name":"Rankine","aliases":["rankine","Ra"],"value":"-272.5944444444445","formatted":["degree rankine","degrees rankine"]},
-				{"name":"Réaumur","aliases":["réaumur","R"],"value":"1.25","formatted":["degree réaumur","degrees réaumur"]}
+				{"name":"Réaumur","aliases":["réaumur","R","reaumur"],"value":"1.25","formatted":["degree réaumur","degrees réaumur"]}
 			]
 		},
 		"speed": {
@@ -348,7 +348,8 @@
 				{"name":"Joule/Meter","aliases":["joule/meter","J/m"],"value":"1","formatted":["joule/meter","joule/meters"]},
 				{"name":"Kip Force","aliases":["kip force","kip"],"value":"4448.22161525477","formatted":["kip force","kip forces"]},
 				{"name":"Ounce Force","aliases":["ounce force","ozf"],"value":"0.27801385095","formatted":["ounce force","ounce forces"]},
-				{"name":"Poundal","aliases":["poundal","pdl"],"value":"0.138254954375998","formatted":["poundal","poundals"]}
+				{"name":"Poundal","aliases":["poundal","pdl"],"value":"0.138254954375998","formatted":["poundal","poundals"]},
+				{"name":"Sthène","aliases":["sthène","sn"],"value":"1000","formatted":["sthène","sthènes"]}
 			]
 		},
 		"pressure": {
@@ -367,7 +368,7 @@
 		},
 		"time": {
 			"default": {
-				"name": "Minutes",
+				"name": "Minute",
 				"aliases": ["minute","min"]
 			},
 			"units": [
@@ -430,15 +431,15 @@
 		    {"code": "DKK", "name": "Danish Krone"},
 		    {"code": "XCD", "name": "East Caribbean Dollar"},
 		    {"code": "EGP", "name": "Egyptian Pound"},
-		    {"code": "EUR", "name": "Euro"},
+		    {"code": "EUR", "name": "Euro", "short": "euro"},
 		    {"code": "FJD", "name": "Fijian Dollar"},
 		    {"code": "GMD", "name": "Gambian Dalasi"},
 		    {"code": "GHS", "name": "Ghana Cedi"},
-		    {"code": "GTQ", "name": "Guatemalan Quetzal"},
+		    {"code": "GTQ", "name": "Guatemalan Quetzal", "short": "quetzal"},
 		    {"code": "HKD", "name": "Hong Kong Dollar"},
 		    {"code": "HUF", "name": "Hungarian Forint"},
 		    {"code": "ISK", "name": "Icelandic Krona"},
-		    {"code": "INR", "name": "Indian Rupee"},
+		    {"code": "INR", "name": "Indian Rupee", "short": "rupee"},
 		    {"code": "IDR", "name": "Indonesian Rupiah"},
 		    {"code": "ILS", "name": "Israeli Sheqel"},
 		    {"code": "JMD", "name": "Jamaican Dollar"},
@@ -447,9 +448,9 @@
 		    {"code": "KES", "name": "Kenyan Shilling"},
 		    {"code": "KWD", "name": "Kuwaiti Dinar"},
 		    {"code": "LAK", "name": "Lao Kip"},
-		    {"code": "LVL", "name": "Latvian Lats"},
+		    {"code": "LVL", "name": "Latvian Lats", "formatted": ["Latvian Lats", "Latvian Lati"]},
 		    {"code": "LBP", "name": "Lebanese Pound"},
-		    {"code": "LTL", "name": "Lithuanian Litas"},
+		    {"code": "LTL", "name": "Lithuanian Litas", "formatted": ["Lithuanian Litas", "Lithuanian Litai"]},
 		    {"code": "MKD", "name": "Macedonian Denar"},
 		    {"code": "MGA", "name": "Malagasy Ariary"},
 		    {"code": "MYR", "name": "Malaysian Ringgit"},
@@ -492,7 +493,7 @@
 		    {"code": "AED", "name": "United Arab Emirates Dirham"},
 		    {"code": "USD", "name": "United States Dollar", "short": "dollar"},
 		    {"code": "UYU", "name": "Uruguayan Peso"},
-		    {"code": "VEF", "name": "Venezuelan BolÃ­var"},
+		    {"code": "VEF", "name": "Venezuelan Bolívar", "formatted": [ "Venezuelan Bolívar", "Venezuelan Bolívares" ]},
 		    {"code": "VND", "name": "Vietnamese Dong", "short": "dong"},
 		   	{"code": "XOF", "name": "West African Franc"}
 		],
@@ -565,17 +566,12 @@
 		},
 		{
 			"code": "AMST",
-			"name": "Amazon Summer Time (Brazil)[1]",
-			"offset": "-03:00"
-		},
-		{
-			"code": "AMST",
 			"name": "Armenia Summer Time",
 			"offset": "+05:00"
 		},
 		{
 			"code": "AMT",
-			"name": "Amazon Time (Brazil)[2]",
+			"name": "Amazon Time (Brazil)",
 			"offset": "-04:00"
 		},
 		{
@@ -587,11 +583,6 @@
 			"code": "ART",
 			"name": "Argentina Time",
 			"offset": "-03:00"
-		},
-		{
-			"code": "AST",
-			"name": "Arabia Standard Time",
-			"offset": "+03:00"
 		},
 		{
 			"code": "AST",
@@ -657,16 +648,6 @@
 			"code": "BST",
 			"name": "Bangladesh Standard Time",
 			"offset": "+06:00"
-		},
-		{
-			"code": "BST",
-			"name": "Bougainville Standard Time[4]",
-			"offset": "+11:00"
-		},
-		{
-			"code": "BST",
-			"name": "British Summer Time (British Standard Time from Feb 1968 to Oct 1971)",
-			"offset": "+01:00"
 		},
 		{
 			"code": "BTT",
@@ -772,26 +753,6 @@
 			"code": "CST",
 			"name": "Central Standard Time (North America)",
 			"offset": "-06:00"
-		},
-		{
-			"code": "CST",
-			"name": "China Standard Time",
-			"offset": "+08:00"
-		},
-		{
-			"code": "CST",
-			"name": "Central Standard Time (Australia)",
-			"offset": "+09:30"
-		},
-		{
-			"code": "CST",
-			"name": "Central Summer Time (Australia)",
-			"offset": "+10:30"
-		},
-		{
-			"code": "CST",
-			"name": "Cuba Standard Time",
-			"offset": "-05:00"
 		},
 		{
 			"code": "CT",
@@ -906,11 +867,6 @@
 		{
 			"code": "FKST",
 			"name": "Falkland Islands Standard Time",
-			"offset": "-03:00"
-		},
-		{
-			"code": "FKST",
-			"name": "Falkland Islands Summer Time",
 			"offset": "-03:00"
 		},
 		{
@@ -1049,16 +1005,6 @@
 			"offset": "+05:30"
 		},
 		{
-			"code": "IST",
-			"name": "Irish Standard Time[7]",
-			"offset": "+01:00"
-		},
-		{
-			"code": "IST",
-			"name": "Israel Standard Time",
-			"offset": "+02:00"
-		},
-		{
 			"code": "JST",
 			"name": "Japan Standard Time",
 			"offset": "+09:00"
@@ -1087,11 +1033,6 @@
 			"code": "LHST",
 			"name": "Lord Howe Standard Time",
 			"offset": "+10:30"
-		},
-		{
-			"code": "LHST",
-			"name": "Lord Howe Summer Time",
-			"offset": "+11:00"
 		},
 		{
 			"code": "LINT",
@@ -1155,18 +1096,8 @@
 		},
 		{
 			"code": "MST",
-			"name": "Malaysia Standard Time",
-			"offset": "+08:00"
-		},
-		{
-			"code": "MST",
 			"name": "Mountain Standard Time (North America)",
 			"offset": "-07:00"
-		},
-		{
-			"code": "MST",
-			"name": "Myanmar Standard Time",
-			"offset": "+06:30"
 		},
 		{
 			"code": "MUT",
@@ -1289,11 +1220,6 @@
 			"offset": "-08:00"
 		},
 		{
-			"code": "PST",
-			"name": "Philippine Standard Time",
-			"offset": "+08:00"
-		},
-		{
 			"code": "PYST",
 			"name": "Paraguay Summer Time (South America)[8]",
 			"offset": "-03:00"
@@ -1362,11 +1288,6 @@
 			"code": "SST",
 			"name": "Samoa Standard Time",
 			"offset": "-11:00"
-		},
-		{
-			"code": "SST",
-			"name": "Singapore Standard Time",
-			"offset": "+08:00"
 		},
 		{
 			"code": "SYOT",
